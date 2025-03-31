@@ -1,0 +1,94 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Si tu devais choisir un rôle dans une aventure fantastique, lequel te conviendrait le mieux ?",
+      "answers": {
+        "A": "Le barbare puissant qui écrase tout sur son passage. ",
+        "B": "Le stratège qui manipule les événements depuis l’ombre.",
+        "C": "Le guerrier intrépide qui fonce sans hésitation.",
+        "D": "L’inventeur fou qui trouve toujours une solution improbable.",
+        "E": "Le prêtre ou le nécromancien qui joue avec la vie et la mort."
+      }
+    },
+    {
+      "id": 2,
+      "question": "Comment gères-tu les conflits dans la vie de tous les jours ?",
+      "answers": {
+        "A": "En affrontant le problème directement et avec force.",
+        "B": "En analysant calmement la situation et en trouvant la meilleure solution.",
+        "C": "En réagissant rapidement et avec passion, quitte à être impulsif.",
+        "D": "En trouvant une manière originale et inattendue de régler le conflit.",
+        "E": "En jouant sur le long terme, en gardant en tête le gain final."
+      }
+    },
+    {
+      "id": 3,
+      "question": "Quel est ton style de jeu préféré dans un jeu vidéo ?",
+      "answers": {
+        "A": "Un jeu où je peux foncer dans le tas avec des personnages puissants.",
+        "B": "Un jeu où la planification et la stratégie sont essentielles.",
+        "C": "Un jeu rapide où les réflexes et la prise de risque sont récompensés.",
+        "D": "Un jeu qui permet d’expérimenter et d’essayer plein de tactiques bizarres.",
+        "E": "Un jeu où la gestion des ressources et la survie sont essentielles."
+      }
+    },
+    {
+      "id": 4,
+      "question": "Quel genre de personnage préfères-tu dans les films/séries ?",
+      "answers": {
+        "A": "Le héros brutal qui résout tout par la force.",
+        "B": "Le tacticien froid qui contrôle tout dans l’ombre.",
+        "C": "L’antihéros charismatique qui agit par instinct.",
+        "D": "Le génie excentrique qui trouve toujours une solution impossible.",
+        "E": "Le maître manipulateur qui tire les ficelles en coulisses."
+      }
+    },
+    {
+      "id": 5,
+      "question": "Si tu devais choisir un type de pouvoir magique, lequel prendrais-tu ?",
+      "answers": {
+        "A": "Une force titanesque et un lien profond avec la nature.",
+        "B": "Le pouvoir de la télépathie et du contrôle mental.",
+        "C": "La maîtrise du feu et de la destruction pure.",
+        "D": "La capacité de manipuler le temps et l’espace.",
+        "E": "Le pouvoir de la vie et de la mort, pour soigner ou anéantir."
+      }
+    }
+  ],
+  "mapping": {
+    "A": ["Gruul", "Naya", "Jund"],
+    "B": ["Azorius", "Dimir", "Esper"],
+    "C": ["Rakdos", "Boros", "Mardu"],
+    "D": ["Izzet", "Jeskai", "Temur"],
+    "E": ["Orzhov", "Sultai", "Abzan"]
+  },
+  "colours": {
+    "ravnica": {
+      "Azorius": ["white", "blue"],
+      "Dimir": ["blue", "black"],
+      "Rakdos": ["black", "red"],
+      "Gruul": ["red", "green"],
+      "Selesnya": ["green", "white"],
+      "Orzhov": ["black", "white"],
+      "Simic": ["blue", "green"],
+      "Golgari": ["black", "green"],
+      "Boros": ["red", "white"],
+      "Izzet": ["red", "blue"]
+    },
+    "tarkir": {
+      "Abzan": ["white", "black", "green"],
+      "Jeskai": ["blue", "red", "white"],
+      "Sultai": ["black", "green", "blue"],
+      "Mardu": ["red", "white", "black"],
+      "Temur": ["green", "blue", "red"]
+    },
+    "alara": {
+      "Bant": ["white", "green", "blue"],
+      "Esper": ["blue", "white", "black"],
+      "Grixis": ["black", "blue", "red"],
+      "Jund": ["red", "black", "green"],
+      "Naya": ["green", "red", "white"]
+    }
+  }
+}
