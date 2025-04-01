@@ -36,11 +36,11 @@ export default function QuizPage() {
 
   if (!questions) return <div>Chargement...</div>;
   return (
-    <>
-      <h2>Quel deck es-tu ?</h2>
+    <main>
+      <h1>Quel deck es-tu ?</h1>
 
       <form onSubmit={handleSubmit}>
-        <h3>{questions[currentIndex].question}</h3>
+        <h2>{questions[currentIndex].question}</h2>
         {questions[currentIndex].answers.map((answer) => (
           <div key={answer.letter}>
             <label htmlFor={answer.letter}>
@@ -67,6 +67,6 @@ export default function QuizPage() {
           <button type="submit">Valider le questionnaire</button>
         )}
       </form>
-    </>
+    </main>
   );
 }
