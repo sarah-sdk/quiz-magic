@@ -1,6 +1,30 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
 import App from "./App.tsx";
+import ColoursPage from "./pages/ColoursPage/ColoursPage.tsx";
+import QuizPage from "./pages/QuizPage/QuizPage.tsx";
+import { fetchColours, fetchQuestions } from "./services/loader.ts";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/quiz",
+        element: <QuizPage />,
+        loader: fetchQuestions,
+      },
+      {
+        path: "/couleurs",
+        element: <ColoursPage />,
+        loader: fetchColours,
+      },
+    ],
+  },
+]);
 
 const rootElement = document.getElementById("root");
 
@@ -10,6 +34,6 @@ if (rootElement == null) {
 
 createRoot(rootElement).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>,
 );
